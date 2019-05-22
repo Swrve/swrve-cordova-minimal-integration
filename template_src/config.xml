@@ -20,7 +20,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
         <preference name="BackupWebStorage" value="local" />
-        <hook type="after_platform_add" src="hooks/ios-setup.sh"/>
+        <hook type="after_platform_add" src="hooks/after_platform_add/ios-setup.sh"/>
     </platform>
     <plugin name="com.swrve.SwrvePlugin" spec="../cordova-sdk/public/SwrvePlugin/"/>
 </widget>
