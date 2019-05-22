@@ -9,7 +9,7 @@ This template uses:
 
 ## Requirements
 * **Node.js:** _10.x_ or higher
-* **Cordova:** _8.x_ or higher
+* **Cordova:** _9.x_ or higher
 
 ---
 
