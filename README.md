@@ -10,6 +10,8 @@ This template uses:
 ## Requirements
 * **Node.js:** _10.x_ or higher
 * **Cordova:** _9.x_ or higher
+* **cordova-iOS:** _5.0.0 or higher
+* **cordova-Android:** _8.0.0 or higher
 
 ---
 
