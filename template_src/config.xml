@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.swrve.cordova.minimal-integration" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.example.hello" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Swrve Minimal Integration Teamplate</name>
     <description>
         Swrve Cordova Minimal Integration Template
@@ -15,11 +15,28 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+    
+        <!-- Begin Android Swrve SDK preferences -->
+        <preference name="swrve.appId" value="-1" />
+        <preference name="swrve.apiKey" value="YourSwrveKey" />
+        <preference name="swrve.pushEnabled" value="true" />
+        <preference name="swrve.drawablePath" value="swrve-support-files/android/drawable/" />
+        <preference name="swrve.googleServicesPath" value="swrve-support-files/android/google-services.json" />
+        <!-- End Android Swrve SDK preferences -->
+    
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
         <preference name="BackupWebStorage" value="local"/>
+        
+        <!-- Begin iOS Swrve SDK preferences -->
+        <preference name="swrve.appId" value="-1" />
+        <preference name="swrve.apiKey" value="YourSwrveKey" />
+        <preference name="swrve.pushEnabled" value="true" />
+        <preference name="swrve.appGroupIdentifier" value="group.com.example.hello" />
+        <!-- End iOS Swrve SDK preferences -->
+    
     </platform>
     <plugin name="com.swrve.SwrvePlugin" spec="../cordova-sdk/public/SwrvePlugin/"/>
 </widget>

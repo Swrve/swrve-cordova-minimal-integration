@@ -40,5 +40,8 @@ $ cordova platform add android
 $ cordova run android
 $ cordova platform add ios
 $ cordova run ios
+```
 
+## Important to know
 
+This template include the [google-services.json](https://github.com/Swrve/swrve-cordova-minimal-integration/template_src/swrve-support-files/android/google-services.json) based from the [firebase-quickstart](https://github.com/firebase/quickstart-android) git Project. For more information about how to setup and create the google-services.json for your project access the [google firebase documentation](https://support.google.com/firebase/answer/7015592?hl=en)
