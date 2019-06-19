@@ -36,7 +36,6 @@
         <preference name="swrve.pushEnabled" value="true" />
         <preference name="swrve.appGroupIdentifier" value="group.com.example.hello" />
         <!-- End iOS Swrve SDK preferences -->
-    
     </platform>
-    <plugin name="com.swrve.SwrvePlugin" spec="../cordova-sdk/public/SwrvePlugin/"/>
+    <plugin name="cordova-plugin-swrve" spec="local_path_to_swrve_sdk" />
 </widget>

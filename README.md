@@ -1,13 +1,13 @@
-# 
-
 # Swrve Minimal Integration Template
 
 You can start your new cordova project perfectly with this template.
 
 This template uses:
-* [Swrve CordovaSDK](https://github.com/Swrve/swrve-cordova-sdk/)
+
+* [Swrve Cordova SDK](https://github.com/Swrve/swrve-cordova-sdk/)
 
 ## Requirements
+
 * **Node.js:** _10.x_ or higher
 * **Cordova:** _9.x_ or higher
 * **cordova-iOS:** _5.0.0 or higher
@@ -17,31 +17,26 @@ This template uses:
 
 ## Installation
 
-This template needs cordova or phonegap, for more information [cordova installation](https://cordova.apache.org/docs/en/latest/guide/cli/) or [phonegap installation](http://docs.phonegap.com/getting-started/1-install-phonegap/desktop/).
+For this template you will need either the [cordova](https://cordova.apache.org/docs/en/latest/guide/cli/) or [phonegap]((http://docs.phonegap.com/getting-started/1-install-phonegap/desktop/)) CLI installed.
 
-
-``` bash
-$ cordova create hello com.example.hello HelloWorld --template swrve-cordova-minimal-integration
-$ phonegap create hello com.example.hello HelloWorld --template swrve-cordova-minimal-integration
+```bash
+  cordova create hello com.example.hello HelloWorld --template swrve-cordova-minimal-integration
+  phonegap create hello com.example.hello HelloWorld --template swrve-cordova-minimal-integration
 ```
 
 ## Usage
 
-You can use cordova or phonegap commands.
+Before starting, please read the integration guide for the [Swrve Cordova Plugin](https://docs.swrve.com/developer-documentation/integration/cordova/) first.
 
-Example usage:
-```
-$ npm install
-$ npm start
-```
-```
-$ npm run build
-$ cordova platform add android
-$ cordova run android
-$ cordova platform add ios
-$ cordova run ios
-```
+If you want to try a build quickly and see the generated projects at a minimum you need to do the following:
 
-## Important to know
+1. Edit `cordova-plugin-swrve` path in `config.xml` to point to where you have downloaded the SDK.
+2. Install the plugin to your application with `cordova plugin add cordova-plugin-swrve`.
+3. Replace the values at properties `swrve.appId` and `swrve.apiKey` with your Swrve App ID and API key.
+4. If you are not using push. Set the `swrve.pushEnabled` property to `false`. If you are, please follow the afforementioned integration guide.  
 
-This template include the [google-services.json](https://github.com/Swrve/swrve-cordova-minimal-integration/blob/dev/template_src/swrve-support-files/android/google-services.json) based from the [firebase-quickstart](https://github.com/firebase/quickstart-android) git Project. For more information about how to setup and create the google-services.json for your project access the [google firebase documentation](https://support.google.com/firebase/answer/7015592?hl=en)
+## Additional Information
+
+* This template includes the [google-services.json](https://github.com/Swrve/swrve-cordova-minimal-integration/blob/dev/template_src/swrve-support-files/android/google-services.json) which come from the [firebase-quickstart](https://github.com/firebase/quickstart-android) git Project. For more information on how to setup and create the google-services.json for your project please read the [google firebase documentation](https://support.google.com/firebase/answer/7015592?hl=en)
+* The images found under `swrve-support-files/drawable/` are used for Android Push Notifications. For more information on them please consult the **Push Notifications** section of the [cordova integration guide](https://docs.swrve.com/developer-documentation/integration/cordova/#Push_notifications).
+* If you are using the Phonegap CLI. There is an issue where the cordova-android version is set to 7.1.1 instead of the recommended cordova-android 8.0.0. cordova-android 7.1.1 does not set the Android API version to 28 which can cause gradle issues. To fix this, you can go to `platform/android/project.properties` and replace the `target` value from `android-27` to `android-28`.
