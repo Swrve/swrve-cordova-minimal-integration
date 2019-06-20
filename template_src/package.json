@@ -1,21 +1,26 @@
 {
-  "name": "swrve-minimal-integration-template",
-  "version": "1.0.0",
-  "main": "index.js",
-  "keywords": [
-      "cordova:template",
-      "swrve",
-      "analytics",
-      "messaging",
-      "ecosystem:cordova",
-      "cordova-android",
-      "cordova-ios",
-      "minimal-integration"
-  ],
-  "author": "Swrve Mobile Inc",
-  "license": "Apache 2.0",
-  "bugs": {
-      "url": "https://github.com/Swrve/swrve-cordova-minimal-integration/issues"
-  },
-  "homepage": "https://github.com/Swrve/swrve-cordova-minimal-integration#readme"
+	"name": "swrve-minimal-integration-template",
+	"version": "1.0.0",
+	"main": "index.js",
+	"keywords": [
+		"cordova:template",
+		"swrve",
+		"analytics",
+		"messaging",
+		"ecosystem:cordova",
+		"cordova-android",
+		"cordova-ios",
+		"minimal-integration"
+	],
+	"author": "Swrve Mobile Inc",
+	"license": "Apache 2.0",
+	"bugs": {
+		"url": "https://github.com/Swrve/swrve-cordova-minimal-integration/issues"
+	},
+	"homepage": "https://github.com/Swrve/swrve-cordova-minimal-integration#readme",
+	"cordova": {
+		"plugins": {
+			"cordova-plugin-x-toast": {}
+		}
+	}
 }
