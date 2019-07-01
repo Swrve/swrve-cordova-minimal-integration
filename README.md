@@ -17,11 +17,12 @@ This template uses:
 
 ## Installation
 
-For this template you will need either the [cordova](https://cordova.apache.org/docs/en/latest/guide/cli/) or [phonegap]((http://docs.phonegap.com/getting-started/1-install-phonegap/desktop/)) CLI installed.
+For this template you will need either the [cordova](https://cordova.apache.org/docs/en/latest/guide/cli/), [phonegap](http://docs.phonegap.com/getting-started/1-install-phonegap/desktop/) or [ionic](https://ionicframework.com/docs/cli) CLI installed.
 
 ```bash
-  cordova create hello com.example.hello HelloWorld --template swrve-cordova-minimal-integration
-  phonegap create hello com.example.hello HelloWorld --template swrve-cordova-minimal-integration
+  cordova create hello com.example.hello HelloWorld --template https://github.com/Swrve/swrve-cordova-minimal-integration.git
+  phonegap create hello com.example.hello HelloWorld --template https://github.com/Swrve/swrve-cordova-minimal-integration.git
+  ionic create hello com.example.hello HelloWorld --template https://github.com/Swrve/swrve-cordova-minimal-integration.git
 ```
 
 ## Usage
