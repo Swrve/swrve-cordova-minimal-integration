@@ -26,7 +26,7 @@
         <!-- To use the EU stack, include this in your config. -->
         <!-- <preference name="swrve.stack" value="EU" /> -->
 
-        <!-- If you want to set a custom googleServicesVersion you can to it be uncometing the preference bellow -->
+        <!-- If you want to set a custom googleServicesVersion you can to it be uncommenting the preference bellow -->
         <!-- <preference name="swrve.googleServicesVersion" value ="4.2.0"/> -->
 
         <!-- Ad Journey preferences -->
