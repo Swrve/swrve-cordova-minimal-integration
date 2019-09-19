@@ -58,6 +58,9 @@ Our SDK uses a series of hooks to inject code to the final iOS/Android project. 
 | --- | --- | --- | 
 | `swrve.appGroupIdentifier` | This is an Apple Group Identifier that will be used for push influence tracking |  string |
 | `swrve.clearPushBadgeOnStartup` | When defined as true your iOS app will clear any badge from you app when the app opened | boolean |  
+| `swrve.pushNotificationEvent` | If you want to use specific event to request for the push permission | string |  
+| `swrve.provisionalPushNotificationEvent` | If you want to use specific event to send the provisional push | string |  
+
 
 ## Additional Information
 
