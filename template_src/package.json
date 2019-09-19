@@ -17,10 +17,18 @@
 	"bugs": {
 		"url": "https://github.com/Swrve/swrve-cordova-minimal-integration/issues"
 	},
+	"dependencies": {
+		"cordova-android": "^8.1.0",
+		"cordova-ios": "^5.0.1",
+		"cordova-plugin-swrve": "2.0.0",
+		"cordova-plugin-x-toast": "^2.7.2"
+	},
 	"homepage": "https://github.com/Swrve/swrve-cordova-minimal-integration#readme",
 	"cordova": {
 		"plugins": {
-			"cordova-plugin-x-toast": {}
-		}
+			"cordova-plugin-x-toast": {},
+			"cordova-plugin-swrve": {}
+		},
+		"platforms": [ "ios", "android" ]
 	}
 }

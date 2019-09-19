@@ -56,7 +56,8 @@
 	        </array>
         </edit-config>
 
-        <!-- If u want use provisional Push for iOS you need to uncomment both preferences bellow -->
+        <!-- If you want use provisional Push or request for push permissions with an especific event -->
+        <!-- We do provide support for it using the bellow events -->
         <!-- swrve.pushNotificationEvent is the custom event that you will tirgger in ur App -->
         <!-- <preference name="swrve.pushNotificationEvent" value="YOUR_CUSTOM_EVENT_TO_request_push_permission" /> -->
         <!-- <preference name="swrve.provisionalPushNotificationEvent" value="YOUR_CUSTOM_EVENT_TO_request_provisional_push_permission" /> -->
@@ -67,5 +68,4 @@
 
         <!-- End iOS Swrve SDK preferences -->
     </platform>
-    <plugin name="cordova-plugin-swrve" spec="local_path_to_swrve_sdk" />
 </widget>

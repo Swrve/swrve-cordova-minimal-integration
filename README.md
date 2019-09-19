@@ -35,32 +35,34 @@ If you want to try a build quickly and see the generated projects at a minimum y
 3. Replace the values at properties `swrve.appId` and `swrve.apiKey` with your Swrve App ID and API key.
 4. If you are not using push. Set the `swrve.pushEnabled` property to `false`. If you are, please follow the afforementioned integration guide.  
 
-## Preferences that are available on Swrve Cordova SDK.
-Our SDK uses a series of hooks to inject code to the final iOS/Android project. Below, we provide a table with all available preferences the SwrveSDK can interpret. 
+## Preferences that are available on Swrve Cordova SDK
 
-### Preferences availables for iOS/Android.
+Our SDK uses a series of hooks to inject code to the final iOS/Android project. Below, we provide a table with all available preferences the SwrveSDK can interpret.
+
+### Preferences availables for iOS/Android
 
  Preference | Description | type |
-| --- | --- | --- | 
-| `swrve.appId` | This is the expected Swrve **App Id** |  string |
-| `swrve.apiKey` | This is the expected Swrve **API Key** | string |  
-| `swrve.pushEnabled` | If you want use Swrve's Push Solution | boolean|
-| `swrve.adJourneyEnabled` | This will add the respective code for your app to support Ad Journey If you want use Swrve Push inside your App | boolean|
+| --- | --- | --- |
+| `swrve.appId` | Swrve **App Id** |  string |
+| `swrve.apiKey` | Swrve **API Key** | string |  
+| `swrve.pushEnabled` | Include and enable push notifications. | boolean|
+| `swrve.adJourneyEnabled` | Include and enable ad journey support. | boolean|
 
-### Preferences only available on Android.
+### Preferences only available on Android
+
  Preference | Description | type |
-| --- | --- | --- | 
-| `swrve.drawablePath` | Path for you local drawable resources that will be used by our Android Push solution | string |
-| `swrve.googleServicesPath` | Path for you local google services json file **this path should be provided when using firebase push for Android**  | string |
+| --- | --- | --- |
+| `swrve.drawablePath` | Local path that points to your icon files that are used for Android push notifications. | string |
+| `swrve.googleServicesPath` | Path for your local google-services.json file that is **required** to use Android push notifications.  | string |
 
-### Preferences only available on iOS.
+### Preferences only available on iOS
+
  Preference | Description | type |
-| --- | --- | --- | 
-| `swrve.appGroupIdentifier` | This is an Apple Group Identifier that will be used for push influence tracking |  string |
-| `swrve.clearPushBadgeOnStartup` | When defined as true your iOS app will clear any badge from you app when the app opened | boolean |  
-| `swrve.pushNotificationEvent` | If you want to use specific event to request for the push permission | string |  
-| `swrve.provisionalPushNotificationEvent` | If you want to use specific event to send the provisional push | string |  
-
+| --- | --- | --- |
+| `swrve.appGroupIdentifier` | This is an application group identifier that is used for push notification influence tracking. |  string |
+| `swrve.clearPushBadgeOnStartup` | When enabled, the application clears any notification badges from the app icon when the app starts. | boolean |  
+| `swrve.pushNotificationEvent` | Event that triggers the push notification permission request. Include if you do not want to ask for push permissions on startup. | string |
+| `swrve.provisionalPushNotificationEvent` | Event that triggers token retrieval for provisional push notifications. | string |
 
 ## Additional Information
 
