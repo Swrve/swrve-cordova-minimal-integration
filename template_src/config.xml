@@ -22,6 +22,15 @@
         <preference name="swrve.pushEnabled" value="true" />
         <preference name="swrve.drawablePath" value="swrve-support-files/android/drawable/" />
         <preference name="swrve.googleServicesPath" value="swrve-support-files/android/google-services.json" />
+
+        <!-- To use the EU stack, include this in your config. -->
+        <!-- <preference name="swrve.stack" value="EU" /> -->
+
+        <!-- If you want to set a custom googleServicesVersion you can to it be uncommenting the preference bellow -->
+        <!-- <preference name="swrve.googleServicesVersion" value ="4.2.0"/> -->
+
+        <!-- Ad Journey preferences -->
+        <preference name="swrve.adJourneyEnabled" value="true" />
         <!-- End Android Swrve SDK preferences -->
     
     </platform>
@@ -33,9 +42,30 @@
         <!-- Begin iOS Swrve SDK preferences -->
         <preference name="swrve.appId" value="-1" />
         <preference name="swrve.apiKey" value="YourSwrveKey" />
+        
+        <!-- To use the EU stack, include this in your config. -->
+        <!-- <preference name="swrve.stack" value="EU" /> -->
+        
+        <!-- Push preferences -->
         <preference name="swrve.pushEnabled" value="true" />
         <preference name="swrve.appGroupIdentifier" value="group.com.example.hello" />
+        <preference name="swrve.clearPushBadgeOnStartup" value ="true" />
+        <edit-config target="UIBackgroundModes" file="*-Info.plist" mode="merge">
+            <array>
+		        <string>remote-notification</string>
+	        </array>
+        </edit-config>
+
+        <!-- If you want use provisional Push or request for push permissions with an especific event -->
+        <!-- We do provide support for it using the bellow events -->
+        <!-- swrve.pushNotificationEvent is the custom event that you will tirgger in ur App -->
+        <!-- <preference name="swrve.pushNotificationEvent" value="YOUR_CUSTOM_EVENT_TO_request_push_permission" /> -->
+        <!-- <preference name="swrve.provisionalPushNotificationEvent" value="YOUR_CUSTOM_EVENT_TO_request_provisional_push_permission" /> -->
+        
+        <!-- Ad Journey preferences -->
+        <!-- <preference name="swrve.adJourneyEnabled" value="true" /> -->
+        <!-- <preference name="swrve.adJourneyProcessOtherLinksEnabled" value="true" /> -->
+
         <!-- End iOS Swrve SDK preferences -->
     </platform>
-    <plugin name="cordova-plugin-swrve" spec="local_path_to_swrve_sdk" />
 </widget>

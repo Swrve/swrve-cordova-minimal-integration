@@ -17,12 +17,11 @@ This template uses:
 
 ## Installation
 
-For this template you will need either the [cordova](https://cordova.apache.org/docs/en/latest/guide/cli/), [phonegap](http://docs.phonegap.com/getting-started/1-install-phonegap/desktop/) or [ionic](https://ionicframework.com/docs/cli) CLI installed.
+For this template you will need either the [cordova](https://cordova.apache.org/docs/en/latest/guide/cli/) or some flavor that is based on cordova like [phonegap](http://docs.phonegap.com/getting-started/1-install-phonegap/desktop/)
 
 ```bash
   cordova create hello com.example.hello HelloWorld --template https://github.com/Swrve/swrve-cordova-minimal-integration.git
   phonegap create hello com.example.hello HelloWorld --template https://github.com/Swrve/swrve-cordova-minimal-integration.git
-  ionic create hello com.example.hello HelloWorld --template https://github.com/Swrve/swrve-cordova-minimal-integration.git
 ```
 
 ## Usage
@@ -35,6 +34,35 @@ If you want to try a build quickly and see the generated projects at a minimum y
 2. Install the plugin to your application with `cordova plugin add cordova-plugin-swrve`.
 3. Replace the values at properties `swrve.appId` and `swrve.apiKey` with your Swrve App ID and API key.
 4. If you are not using push. Set the `swrve.pushEnabled` property to `false`. If you are, please follow the afforementioned integration guide.  
+
+## Preferences that are available on Swrve Cordova SDK
+
+Our SDK uses a series of hooks to inject code to the final iOS/Android project. Below, we provide a table with all available preferences the SwrveSDK can interpret.
+
+### Preferences availables for iOS/Android
+
+ Preference | Description | type |
+| --- | --- | --- |
+| `swrve.appId` | Swrve **App Id** |  string |
+| `swrve.apiKey` | Swrve **API Key** | string |  
+| `swrve.pushEnabled` | Include and enable push notifications. | boolean|
+| `swrve.adJourneyEnabled` | Include and enable ad journey support. | boolean|
+
+### Preferences only available on Android
+
+ Preference | Description | type |
+| --- | --- | --- |
+| `swrve.drawablePath` | Local path that points to your icon files that are used for Android push notifications. | string |
+| `swrve.googleServicesPath` | Path for your local google-services.json file that is **required** to use Android push notifications.  | string |
+
+### Preferences only available on iOS
+
+ Preference | Description | type |
+| --- | --- | --- |
+| `swrve.appGroupIdentifier` | This is an application group identifier that is used for push notification influence tracking. |  string |
+| `swrve.clearPushBadgeOnStartup` | When enabled, the application clears any notification badges from the app icon when the app starts. | boolean |  
+| `swrve.pushNotificationEvent` | Event that triggers the push notification permission request. Include if you do not want to ask for push permissions on startup. | string |
+| `swrve.provisionalPushNotificationEvent` | Event that triggers token retrieval for provisional push notifications. | string |
 
 ## Additional Information
 
