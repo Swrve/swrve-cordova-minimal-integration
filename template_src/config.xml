@@ -55,6 +55,11 @@
 		        <string>remote-notification</string>
 	        </array>
         </edit-config>
+
+        <!-- If u want use provisional Push for iOS you need to uncomment both preferences bellow -->
+        <!-- swrve.pushNotificationEvent is the custom event that you will tirgger in ur App -->
+        <!-- <preference name="swrve.pushNotificationEvent" value="YOUR_CUSTOM_EVENT_TO_request_push_permission" /> -->
+        <!-- <preference name="swrve.provisionalPushNotificationEvent" value="devapp_request_provisional_push_permission" /> -->
         
         <!-- Ad Journey preferences -->
         <!-- <preference name="swrve.adJourneyEnabled" value="true" /> -->
