@@ -68,4 +68,5 @@
 
         <!-- End iOS Swrve SDK preferences -->
     </platform>
+    <plugin name="cordova-plugin-swrve" />
 </widget>
